@@ -1,0 +1,23 @@
+{
+  "name": "nektron",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NEKTRON smart helmet cleaning station monorepo.",
+  "workspaces": [
+    "backend",
+    "apps/web",
+    "apps/admin"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace backend",
+    "dev:web": "npm run dev --workspace apps/web",
+    "dev:admin": "npm run dev --workspace apps/admin",
+    "build": "npm run build --workspaces",
+    "start": "npm run start --workspace backend",
+    "qr:machine": "node scripts/generate-machine-qr.mjs",
+    "verify": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,122 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: "N"
+        - generic [ref=e8]: NEKTRON
+      - generic [ref=e9]:
+        - button "Operate" [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+          - text: Operate
+        - button "3D CAD" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+          - text: 3D CAD
+        - generic [ref=e19]:
+          - img [ref=e20]
+          - text: Machine offline
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Smart helmet cleaning from your phone." [level=1] [ref=e29]
+        - paragraph [ref=e30]: Scan the kiosk QR, pay ₹49, place the helmet, and watch the 3-minute cleaning cycle update live.
+        - generic [ref=e31]:
+          - generic [ref=e32]: Machine QR / Code
+          - generic [ref=e33]:
+            - textbox "Machine QR / Code" [ref=e34]:
+              - /placeholder: NEK-DEL-001
+              - text: NEK-DEL-001
+            - button "Scan" [disabled] [ref=e35]:
+              - img [ref=e36]
+              - text: Scan
+        - generic [ref=e41]: NEKTRON Pilot Station detected at Cyber Hub Demo Bay.
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - img [ref=e44]
+          - text: Powered by Laila · Hygiene loop
+        - generic [ref=e47]:
+          - generic [ref=e49]:
+            - img [ref=e50]
+            - generic [ref=e56]: Ready
+          - generic [ref=e57]: NEKTRON
+          - generic [ref=e58]:
+            - generic [ref=e59]: SCAN QR
+            - generic [ref=e61]: PAY & START
+            - generic [ref=e63]: DONE
+          - generic [ref=e70]: CLEAN HELMET. SAFE RIDE.
+  - generic [ref=e72]:
+    - article [ref=e73]:
+      - generic [ref=e74]:
+        - img [ref=e75]
+        - text: Machine Detail
+      - heading "NEKTRON Pilot Station" [level=2] [ref=e78]
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - term [ref=e81]: ID
+          - definition [ref=e82]: NEK-DEL-001
+        - generic [ref=e83]:
+          - term [ref=e84]: Location
+          - definition [ref=e85]: Cyber Hub Demo Bay
+        - generic [ref=e86]:
+          - term [ref=e87]: Status
+          - definition [ref=e88]: available
+        - generic [ref=e89]:
+          - term [ref=e90]: Helmet Cleaning
+          - definition [ref=e91]: ₹49 · 3 min
+      - generic [ref=e92]:
+        - generic [ref=e93]: Door open
+        - generic [ref=e94]: 31°C
+        - generic [ref=e95]: 82% mist
+      - button "Create Payment" [disabled] [ref=e96]:
+        - img [ref=e97]
+        - text: Create Payment
+    - article [ref=e100]:
+      - generic [ref=e101]:
+        - img [ref=e102]
+        - text: Payment & Start
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: Service
+          - strong [ref=e108]: Helmet Cleaning
+        - generic [ref=e109]:
+          - generic [ref=e110]: Payment
+          - strong [ref=e111]: Not created
+      - button "Pay & Start Cleaning" [disabled] [ref=e112]:
+        - img [ref=e113]
+        - text: Pay & Start Cleaning
+    - article [ref=e115]:
+      - generic [ref=e116]:
+        - img [ref=e117]
+        - text: Live Cleaning
+      - generic [ref=e120]: 0%
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - img [ref=e123]
+          - text: Starting
+        - generic [ref=e126]:
+          - img [ref=e127]
+          - text: Air Cleaning
+        - generic [ref=e130]:
+          - img [ref=e131]
+          - text: UV Sanitizing
+        - generic [ref=e134]:
+          - img [ref=e135]
+          - text: Mist Deodorizing
+        - generic [ref=e138]:
+          - img [ref=e139]
+          - text: Drying
+        - generic [ref=e142]:
+          - img [ref=e143]
+          - text: Complete
+  - generic [ref=e146]:
+    - article [ref=e147]:
+      - generic [ref=e148]:
+        - img [ref=e149]
+        - text: History
+      - paragraph [ref=e154]: No cleans yet.
+    - article [ref=e155]:
+      - generic [ref=e156]:
+        - img [ref=e157]
+        - text: Tutorial
+      - list [ref=e160]:
+        - listitem [ref=e161]: Place helmet on the chamber stand.
+        - listitem [ref=e162]: Close the transparent front door.
+        - listitem [ref=e163]: Scan QR, pay, and wait for completion.

@@ -1,0 +1,147 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - link "Back to NEKTRON operation page" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: "N"
+      - strong [ref=e7]: NEKTRON CAD
+    - generic "CAD tools" [ref=e8]:
+      - button "Exterior" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+        - text: Exterior
+      - button "X-Ray" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+        - text: X-Ray
+      - button "Section" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+        - text: Section
+      - button "Exploded" [ref=e27] [cursor=pointer]:
+        - img [ref=e28]
+        - text: Exploded
+      - button "Motion" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+        - text: Motion
+    - link "AR Model" [ref=e42] [cursor=pointer]:
+      - /url: /models/nektron_machine.usdz
+      - img [ref=e43]
+      - text: AR Model
+  - generic [ref=e48]:
+    - complementary [ref=e49]:
+      - generic [ref=e50]:
+        - img [ref=e51]
+        - text: Assembly
+      - generic [ref=e55]:
+        - button "Body shell Compact 1020 x 600 x 430 mm kiosk cabinet" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: Body shell
+          - generic [ref=e58]: Compact 1020 x 600 x 430 mm kiosk cabinet
+        - button "Front display 10.1 inch ad, price, QR prompt, and timer screen" [ref=e59] [cursor=pointer]:
+          - generic [ref=e60]: Front display
+          - generic [ref=e61]: 10.1 inch ad, price, QR prompt, and timer screen
+        - button "Status strip Scan QR, Pay & Start, Helmet Cleaning, Done indicators" [ref=e62] [cursor=pointer]:
+          - generic [ref=e63]: Status strip
+          - generic [ref=e64]: Scan QR, Pay & Start, Helmet Cleaning, Done indicators
+        - button "Glass chamber Transparent red-lit door, handle, and hinges" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Glass chamber
+          - generic [ref=e67]: Transparent red-lit door, handle, and hinges
+        - button "Helmet stand Center stand and support plate" [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]: Helmet stand
+          - generic [ref=e70]: Center stand and support plate
+        - button "Dual fans Rear/top air movement and exhaust" [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]: Dual fans
+          - generic [ref=e73]: Rear/top air movement and exhaust
+        - button "PTC heater Hot-air drying source" [ref=e74] [cursor=pointer]:
+          - generic [ref=e75]: PTC heater
+          - generic [ref=e76]: Hot-air drying source
+        - button "UV tubes Sanitization bars" [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]: UV tubes
+          - generic [ref=e79]: Sanitization bars
+        - button "Spray nozzle High-pressure mist/deodorizer outlet" [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]: Spray nozzle
+          - generic [ref=e82]: High-pressure mist/deodorizer outlet
+        - button "Service bay ESP32, relay board, supply, bottles, fan, vents" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: Service bay
+          - generic [ref=e85]: ESP32, relay board, supply, bottles, fan, vents
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - strong [ref=e89]: NEKTRON Smart Helmet Cleaning Station · Powered by Laila
+          - generic [ref=e90]: Compact kiosk prototype · animated subsystem review · reference media applied
+        - generic [ref=e91]:
+          - img [ref=e92]
+          - text: Idle QR display
+      - generic [ref=e95]:
+        - generic: 1020 mm height
+        - generic: 600 mm width
+        - generic: 430 mm depth
+        - generic [ref=e96]:
+          - generic [ref=e97]: Z
+          - generic [ref=e98]: "Y"
+          - generic [ref=e99]: X
+    - complementary [ref=e101]:
+      - generic [ref=e102]:
+        - img [ref=e103]
+        - text: Properties
+      - generic [ref=e109]:
+        - heading "Machine Envelope" [level=3] [ref=e110]
+        - paragraph [ref=e111]:
+          - generic [ref=e112]: Height
+          - strong [ref=e113]: 1020 mm
+        - paragraph [ref=e114]:
+          - generic [ref=e115]: Width
+          - strong [ref=e116]: 600 mm
+        - paragraph [ref=e117]:
+          - generic [ref=e118]: Depth
+          - strong [ref=e119]: 430 mm
+        - paragraph [ref=e120]:
+          - generic [ref=e121]: Weight
+          - strong [ref=e122]: 65 kg
+        - paragraph [ref=e123]:
+          - generic [ref=e124]: Body
+          - strong [ref=e125]: Matte black
+        - paragraph [ref=e126]:
+          - generic [ref=e127]: LED
+          - strong [ref=e128]: Red emission frame
+      - generic [ref=e129]:
+        - heading "Cleaning Hardware" [level=3] [ref=e130]
+        - paragraph [ref=e131]:
+          - generic [ref=e132]: Air
+          - strong [ref=e133]: Blower relay GPIO 14
+        - paragraph [ref=e134]:
+          - generic [ref=e135]: Heat
+          - strong [ref=e136]: PTC relay GPIO 27
+        - paragraph [ref=e137]:
+          - generic [ref=e138]: UV
+          - strong [ref=e139]: UV relay GPIO 26
+        - paragraph [ref=e140]:
+          - generic [ref=e141]: Mist
+          - strong [ref=e142]: Mist relay GPIO 25
+        - paragraph [ref=e143]:
+          - generic [ref=e144]: Power
+          - strong [ref=e145]: 220V AC · 850W
+        - paragraph [ref=e146]:
+          - generic [ref=e147]: Cycle
+          - strong [ref=e148]: 3 minutes · ₹49
+      - generic [ref=e149]:
+        - heading "Color Variants" [level=3] [ref=e150]
+        - generic [ref=e151]:
+          - generic [ref=e152]: Black + red
+          - generic [ref=e153]: White + red
+          - generic [ref=e154]: Black mono
+          - generic [ref=e155]: White mono
+      - heading "Reference Videos" [level=3] [ref=e157]
+      - generic [ref=e161]:
+        - heading "Engineer Checks" [level=3] [ref=e162]
+        - list [ref=e163]:
+          - listitem [ref=e164]: Door interlock before UV/heater
+          - listitem [ref=e165]: Service bay separated from wet chamber
+          - listitem [ref=e166]: Refill tank reachable from lower bay
+          - listitem [ref=e167]: Airflow vectors clear helmet shell
+  - generic [ref=e168]:
+    - generic [ref=e169]:
+      - img [ref=e170]
+      - text: Orbit animation enabled
+    - generic [ref=e175]:
+      - img [ref=e176]
+      - text: Dimension annotations visible
+    - generic [ref=e182]:
+      - img [ref=e183]
+      - text: ESP32 relay map aligned with firmware

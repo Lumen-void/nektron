@@ -1,0 +1,166 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - link "Back to NEKTRON operation page" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: "N"
+      - strong [ref=e7]: NEKTRON CAD
+    - generic "CAD tools" [ref=e8]:
+      - button "Exterior" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+        - text: Exterior
+      - button "X-Ray" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+        - text: X-Ray
+      - button "Section" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+        - text: Section
+      - button "Exploded" [ref=e27] [cursor=pointer]:
+        - img [ref=e28]
+        - text: Exploded
+      - button "Wiring" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+        - text: Wiring
+      - button "Motion" [ref=e45] [cursor=pointer]:
+        - img [ref=e46]
+        - text: Motion
+    - link "AR Model" [ref=e49] [cursor=pointer]:
+      - /url: /models/nektron_machine.usdz
+      - img [ref=e50]
+      - text: AR Model
+  - generic [ref=e55]:
+    - complementary [ref=e56]:
+      - generic [ref=e57]:
+        - img [ref=e58]
+        - text: Assembly
+      - generic [ref=e62]:
+        - button "Body shell Compact 1020 x 600 x 430 mm kiosk cabinet" [ref=e63] [cursor=pointer]:
+          - generic [ref=e64]: Body shell
+          - generic [ref=e65]: Compact 1020 x 600 x 430 mm kiosk cabinet
+        - button "Front display 10.1 inch ad, price, QR prompt, and timer screen" [ref=e66] [cursor=pointer]:
+          - generic [ref=e67]: Front display
+          - generic [ref=e68]: 10.1 inch ad, price, QR prompt, and timer screen
+        - button "Status strip Scan QR, Pay & Start, Helmet Cleaning, Done indicators" [ref=e69] [cursor=pointer]:
+          - generic [ref=e70]: Status strip
+          - generic [ref=e71]: Scan QR, Pay & Start, Helmet Cleaning, Done indicators
+        - button "Glass chamber Transparent red-lit door, handle, and hinges" [ref=e72] [cursor=pointer]:
+          - generic [ref=e73]: Glass chamber
+          - generic [ref=e74]: Transparent red-lit door, handle, and hinges
+        - button "Helmet stand Center stand and support plate" [ref=e75] [cursor=pointer]:
+          - generic [ref=e76]: Helmet stand
+          - generic [ref=e77]: Center stand and support plate
+        - button "Dual fans Rear/top air movement and exhaust" [ref=e78] [cursor=pointer]:
+          - generic [ref=e79]: Dual fans
+          - generic [ref=e80]: Rear/top air movement and exhaust
+        - button "PTC heater Hot-air drying source" [ref=e81] [cursor=pointer]:
+          - generic [ref=e82]: PTC heater
+          - generic [ref=e83]: Hot-air drying source
+        - button "UV tubes Sanitization bars" [ref=e84] [cursor=pointer]:
+          - generic [ref=e85]: UV tubes
+          - generic [ref=e86]: Sanitization bars
+        - button "Spray nozzle High-pressure mist/deodorizer outlet" [ref=e87] [cursor=pointer]:
+          - generic [ref=e88]: Spray nozzle
+          - generic [ref=e89]: High-pressure mist/deodorizer outlet
+        - button "Service bay ESP32, relay board, supply, bottles, fan, vents" [ref=e90] [cursor=pointer]:
+          - generic [ref=e91]: Service bay
+          - generic [ref=e92]: ESP32, relay board, supply, bottles, fan, vents
+        - button "Wiring harness ESP32 relay and sensor routing inside the machine" [active] [ref=e93] [cursor=pointer]:
+          - generic [ref=e94]: Wiring harness
+          - generic [ref=e95]: ESP32 relay and sensor routing inside the machine
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - strong [ref=e99]: NEKTRON Smart Helmet Cleaning Station · Powered by Laila
+          - generic [ref=e100]: Compact kiosk prototype · animated subsystem review · reference media applied
+        - generic [ref=e101]:
+          - img [ref=e102]
+          - text: Idle QR display
+      - generic [ref=e105]:
+        - generic: Hold and drag to orbit · Scroll to zoom · Click a part to inspect
+        - generic: 1020 mm height
+        - generic: 600 mm width
+        - generic: 430 mm depth
+        - generic [ref=e106]:
+          - generic [ref=e107]: Z
+          - generic [ref=e108]: "Y"
+          - generic [ref=e109]: X
+    - complementary [ref=e111]:
+      - generic [ref=e112]:
+        - img [ref=e113]
+        - text: Properties
+      - generic [ref=e119]:
+        - heading "Circuit wiring harness" [level=3] [ref=e214]
+        - paragraph [ref=e127]:
+          - generic [ref=e128]: Placement
+          - strong [ref=e129]: Side channel and rear path, away from wet mist zone and service access.
+        - paragraph [ref=e130]:
+          - generic [ref=e131]: Control
+          - strong [ref=e132]: GPIO 14, 27, 26, 25, 33, 32, 4, 35
+        - paragraph [ref=e133]:
+          - generic [ref=e134]: Wiring
+          - strong [ref=e135]: Red power, yellow signal, cyan sensor, purple UV, orange heater, blue blower.
+        - generic [ref=e136]: Color-coded routed wires from service bay to blower, heater, UV, mist, LEDs, sensors.
+      - generic [ref=e137]:
+        - heading "Machine Envelope" [level=3] [ref=e138]
+        - paragraph [ref=e139]:
+          - generic [ref=e140]: Height
+          - strong [ref=e141]: 1020 mm
+        - paragraph [ref=e142]:
+          - generic [ref=e143]: Width
+          - strong [ref=e144]: 600 mm
+        - paragraph [ref=e145]:
+          - generic [ref=e146]: Depth
+          - strong [ref=e147]: 430 mm
+        - paragraph [ref=e148]:
+          - generic [ref=e149]: Weight
+          - strong [ref=e150]: 65 kg
+        - paragraph [ref=e151]:
+          - generic [ref=e152]: Body
+          - strong [ref=e153]: Matte black
+        - paragraph [ref=e154]:
+          - generic [ref=e155]: LED
+          - strong [ref=e156]: Red emission frame
+      - generic [ref=e157]:
+        - heading "Cleaning Hardware" [level=3] [ref=e158]
+        - paragraph [ref=e159]:
+          - generic [ref=e160]: Air
+          - strong [ref=e161]: Blower relay GPIO 14
+        - paragraph [ref=e162]:
+          - generic [ref=e163]: Heat
+          - strong [ref=e164]: PTC relay GPIO 27
+        - paragraph [ref=e165]:
+          - generic [ref=e166]: UV
+          - strong [ref=e167]: UV relay GPIO 26
+        - paragraph [ref=e168]:
+          - generic [ref=e169]: Mist
+          - strong [ref=e170]: Mist relay GPIO 25
+        - paragraph [ref=e171]:
+          - generic [ref=e172]: Power
+          - strong [ref=e173]: 220V AC · 850W
+        - paragraph [ref=e174]:
+          - generic [ref=e175]: Cycle
+          - strong [ref=e176]: 3 minutes · ₹49
+      - generic [ref=e177]:
+        - heading "Color Variants" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - generic [ref=e180]: Black + red
+          - generic [ref=e181]: White + red
+          - generic [ref=e182]: Black mono
+          - generic [ref=e183]: White mono
+      - heading "Reference Videos" [level=3] [ref=e185]
+      - generic [ref=e189]:
+        - heading "Engineer Checks" [level=3] [ref=e190]
+        - list [ref=e191]:
+          - listitem [ref=e192]: Door interlock before UV/heater
+          - listitem [ref=e193]: Service bay separated from wet chamber
+          - listitem [ref=e194]: Refill tank reachable from lower bay
+          - listitem [ref=e195]: Airflow vectors clear helmet shell
+  - generic [ref=e196]:
+    - generic [ref=e197]:
+      - img [ref=e198]
+      - text: Orbit animation enabled
+    - generic [ref=e203]:
+      - img [ref=e204]
+      - text: Dimension annotations visible
+    - generic [ref=e210]:
+      - img [ref=e211]
+      - text: ESP32 relay map aligned with firmware

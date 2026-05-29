@@ -1,0 +1,12 @@
+node_modules
+**/node_modules
+**/dist
+.git
+.env
+.env.*
+output
+*.png
+3d/exports
+.playwright-cli
+.playwright-mcp
+

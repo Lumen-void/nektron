@@ -1,0 +1,63 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: nektron
+      POSTGRES_USER: nektron
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - nektron_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nektron -d nektron"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PORT: 4000
+      DATABASE_URL: postgres://nektron:${POSTGRES_PASSWORD}@postgres:5432/nektron
+      DATABASE_SSL: "false"
+      AUTH_MODE: otp
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      ADMIN_API_KEY: ${ADMIN_API_KEY}
+      REQUIRE_MACHINE_API_KEYS: "true"
+      DEMO_MACHINE_API_KEY: ${DEMO_MACHINE_API_KEY}
+      RAZORPAY_KEY_ID: ${RAZORPAY_KEY_ID}
+      RAZORPAY_KEY_SECRET: ${RAZORPAY_KEY_SECRET}
+      RAZORPAY_WEBHOOK_SECRET: ${RAZORPAY_WEBHOOK_SECRET}
+    ports:
+      - "4000:4000"
+
+  web:
+    build:
+      context: ..
+      dockerfile: apps/web/Dockerfile
+      args:
+        VITE_API_BASE_URL: ${PUBLIC_API_BASE_URL}
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+
+  admin:
+    build:
+      context: ..
+      dockerfile: apps/admin/Dockerfile
+      args:
+        VITE_API_BASE_URL: ${PUBLIC_API_BASE_URL}
+        VITE_ADMIN_API_KEY: ${ADMIN_API_KEY}
+    restart: unless-stopped
+    ports:
+      - "5174:80"
+
+volumes:
+  nektron_pg:
+
