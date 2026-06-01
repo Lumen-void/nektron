@@ -9,8 +9,8 @@
     <script>
       window.fetch = ((nativeFetch) => (input, init) => {
         const url = typeof input === 'string' ? input : input && input.url;
-        if (url && url.startsWith('http://localhost:4000')) {
-          const path = url.replace('http://localhost:4000', '');
+        if (url && (url.startsWith('http://localhost:4000') || url.startsWith('/nektron/demo-api'))) {
+          const path = url.replace('http://localhost:4000', '').replace('/nektron/demo-api', '');
           const machine = { id: 'demo-machine', machine_code: 'NEK-DEL-001', name: 'NEKTRON Demo Kiosk', location_name: 'Public Portfolio Demo', status: 'online', current_stage: 'idle', price: 49, estimated_minutes: 3, temperature: 32, mist_level: 86, qr_code_value: 'NEKTRON-DEMO' };
           const status = { is_online: true, status: 'ready', current_stage: 'idle', door_closed: true, temperature: 32, mist_level: 86 };
           const report = { status: 'demo', method: 'Public-safe simulated report', before: { hygiene_score: 42, estimated_germ_load: 'High', odor_level: 'Noticeable', moisture_level: 'Medium' }, after: { hygiene_score: 96, estimated_germ_load: 'Low', odor_level: 'Fresh', hot_air_drying: 'Complete' }, improvement: { rider_message: 'Demo cycle ready for presentation.' } };
