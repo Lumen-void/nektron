@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ef233c'/%3E%3Cpath d='M21 45V19h7l9 14V19h6v26h-7l-9-14v14z' fill='white'/%3E%3C/svg%3E" />
     <title>NEKTRON</title>
+
+    <script>
+      window.fetch = ((nativeFetch) => (input, init) => {
+        const url = typeof input === 'string' ? input : input && input.url;
+        if (url && url.startsWith('http://localhost:4000')) {
+          const path = url.replace('http://localhost:4000', '');
+          const machine = { id: 'demo-machine', machine_code: 'NEK-DEL-001', name: 'NEKTRON Demo Kiosk', location_name: 'Public Portfolio Demo', status: 'online', current_stage: 'idle', price: 49, estimated_minutes: 3, temperature: 32, mist_level: 86, qr_code_value: 'NEKTRON-DEMO' };
+          const status = { is_online: true, status: 'ready', current_stage: 'idle', door_closed: true, temperature: 32, mist_level: 86 };
+          const report = { status: 'demo', method: 'Public-safe simulated report', before: { hygiene_score: 42, estimated_germ_load: 'High', odor_level: 'Noticeable', moisture_level: 'Medium' }, after: { hygiene_score: 96, estimated_germ_load: 'Low', odor_level: 'Fresh', hot_air_drying: 'Complete' }, improvement: { rider_message: 'Demo cycle ready for presentation.' } };
+          let body = { ok: true };
+          if (path === '/scan') body = { machine };
+          else if (path.startsWith('/qr/')) body = { qrDataUrl: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22%3E%3Crect width=%22120%22 height=%22120%22 fill=%22white%22/%3E%3Cpath d=%22M10 10h30v30H10zM80 10h30v30H80zM10 80h30v30H10zM55 55h10v10H55zM75 55h10v10H75zM55 80h25v10H55zM90 75h15v30H90z%22 fill=%22black%22/%3E%3C/svg%3E' };
+          else if (path.includes('/status')) body = { status };
+          else if (path.includes('/history')) body = { history: [{ id: 'demo-session', service_type: 'Quick Clean', amount: 49, machine_status: 'ready' }] };
+          else if (path.includes('/report')) body = { report };
+          else if (path.includes('/payments/create-order')) body = { order: { id: 'demo-order', amount: 49, amount_subunits: 4900, currency: 'INR', provider: 'mock' } };
+          else if (path.includes('/payments/verify')) body = { payment: { payment_id: 'demo-payment' } };
+          else if (path.includes('/start')) body = { session: { id: 'demo-session', sanitization_report: report }, machine: { ...machine, current_stage: 'air_cleaning' } };
+          return Promise.resolve(new Response(JSON.stringify(body), { status: 200, headers: { 'content-type': 'application/json' } }));
+        }
+        return nativeFetch(input, init);
+      })(window.fetch.bind(window));
+    </script>
     <script type="module" crossorigin src="/nektron/assets/index-r3O56hL2.js"></script>
     <link rel="stylesheet" crossorigin href="/nektron/assets/index-BlxhFTKn.css">
   </head>
